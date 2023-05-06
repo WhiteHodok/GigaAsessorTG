@@ -2,10 +2,10 @@ import openai
 import telebot
 
 # установка ключа API для OpenAI
-openai.api_key = "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"
+openai.api_key = ""
 
 # создание объекта бота
-bot = telebot.TeleBot(token='6205593984:AAGV3YPyRLcvpmaxtPHHfTX_ZQPSN3HDI5g')
+bot = telebot.TeleBot(token='')
 
 # обработчик сообщений
 @bot.message_handler(func=lambda message: True)
