@@ -7,6 +7,11 @@ openai.api_key = ""
 # создание объекта бота
 bot = telebot.TeleBot(token='')
 
+@bot.message_handler(commands=['start'])
+def start_command(message: telebot.types.Message):
+    # отправка стартового сообщения
+    bot.send_message(chat_id=message.chat.id, text="👋 Я GigaAsessor на основе GPT-3.5 и я помогаю улучшить запрос. Отправь мне свой запрос, для нейросети, я его оценю и дам советы по улучшению.")
+
 # обработчик сообщений
 @bot.message_handler(func=lambda message: True)
 def process_message(message: telebot.types.Message):
