@@ -3,10 +3,10 @@ import telebot
 import sqlite3
 
 # set API key for OpenAI
-openai.api_key = "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"
+openai.api_key = ""
 
 # create bot object
-bot = telebot.TeleBot(token='6205593984:AAGV3YPyRLcvpmaxtPHHfTX_ZQPSN3HDI5g')
+bot = telebot.TeleBot(token='')
 
 # set up database connection
 conn = sqlite3.connect('GDB.db', check_same_thread=False)
